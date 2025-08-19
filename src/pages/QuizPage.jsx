@@ -51,7 +51,7 @@ export default function QuizPage() {
   // Affichage du rapport détaillé après soumission
   if (result) {
     return (
-      <div style={{ display: "grid", gap: 16 }}>
+      <div className="result-container">
         <h2>Résultat</h2>
         <p>
           Score : <b>{result.score}</b> / {result.total}

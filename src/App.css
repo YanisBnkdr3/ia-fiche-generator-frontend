@@ -5,6 +5,7 @@
   text-align: center;
 }
 
+/* Logo par défaut */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +40,53 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* ====================== */
+/* ✅ Ajout responsive quiz */
+/* ====================== */
+
+/* Conteneur des résultats */
+.result-container {
+  display: grid;
+  gap: 16px;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+/* Carte réponse */
+.answer-card {
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Style des listes réponses */
+.answer-card ul {
+  padding-left: 18px;
+  margin: 6px 0;
+}
+
+/* ✅ Adaptation mobile */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .result-container {
+    gap: 12px;
+    padding: 0 8px;
+  }
+
+  .answer-card {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .answer-card ul {
+    padding-left: 14px;
+  }
 }
