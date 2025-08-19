@@ -170,7 +170,7 @@ export default function App() {
           color: "#666",
         }}
       >
-        © {new Date().getFullYear()} Générateur de fiches – Tous droits réservés
+        © {new Date().getFullYear()} Yanis Benkeder – Tous droits réservés
       </footer>
 
       {/* CSS RESPONSIVE */}
