@@ -23,14 +23,16 @@ export default function App() {
       <header
         style={{
           display: "flex",
+          flexDirection: "column",
           alignItems: "center",
-          justifyContent: "space-between",
-          padding: "12px 20px",
+          justifyContent: "center",
+          padding: "16px 20px",
           background: "#2F5249",
           borderRadius: "12px",
           boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
           marginBottom: "20px",
           position: "relative",
+          textAlign: "center",
         }}
       >
         <h1
@@ -45,7 +47,19 @@ export default function App() {
           📚 Générateur de fiches
         </h1>
 
-        {/* MENU BURGER (visible seulement sur mobile) */}
+        {/* ✅ PETITE DESCRIPTION */}
+        <p
+          style={{
+            marginTop: "8px",
+            fontSize: "1.1rem",
+            color: "#fff",
+            fontWeight: "300",
+          }}
+        >
+          ✨ Générez un quiz à travers votre fiche et révisez efficacement
+        </p>
+
+        {/* MENU BURGER */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           style={{
@@ -63,10 +77,7 @@ export default function App() {
 
         {/* NAVIGATION */}
         <nav
-          style={{
-            display: "flex",
-            gap: "20px",
-          }}
+          style={{ display: "flex", gap: "20px", marginTop: "12px" }}
           className="nav-desktop"
         >
           <NavLink
@@ -105,7 +116,7 @@ export default function App() {
           <div
             style={{
               position: "absolute",
-              top: "60px",
+              top: "80px",
               right: "20px",
               background: "#2F5249",
               borderRadius: "10px",
@@ -177,12 +188,8 @@ export default function App() {
       <style>
         {`
           @media (max-width: 768px) {
-            .nav-desktop {
-              display: none !important;
-            }
-            .menu-btn {
-              display: block !important;
-            }
+            .nav-desktop { display: none !important; }
+            .menu-btn { display: block !important; }
           }
         `}
       </style>
